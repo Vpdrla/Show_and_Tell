@@ -1,0 +1,74 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+#gameCanvas {
+  background: #87CEEB; /* 하늘색 배경 */
+}
+
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: moveClouds 20s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.portal {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  background-color: purple;
+  border-radius: 50% / 100%;
+  top: calc(100% - 180px);
+  left: calc(100% - 180px);
+}
+
+.clouds {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.cloud1 {
+  width: 120px;
+  height: 60px;
+  top: 50px;
+  left: 300px;
+  animation-duration: 15s;
+}
+
+.cloud2 {
+  width: 150px;
+  height: 70px;
+  top: 150px;
+  left: 500px;
+  animation-duration: 25s;
+}
+
+.cloud3 {
+  width: 100px;
+  height: 50px;
+  top: 250px;
+  left: 700px;
+  animation-duration: 20s;
+}
